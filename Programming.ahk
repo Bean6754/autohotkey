@@ -18,6 +18,15 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ::cppnewprogram::int main(){return}{{}{return}{return}{}}
 
 ; Shell
-::binbash::#!/bin/bash
+::binbash::#!/bin/bash{return}{return}
+::binksh::#!/bin/ksh{return}{return}
+::binsh::#!/bin/sh{return}{return}
+::bintcsh::#!/bin/tcsh{return}{return}
+::binzsh::#!/bin/zsh{return}{return}
+::usrbinbash::#!/usr/bin/bash{return}{return}
+::usrbinksh::#!/usr/bin/ksh{return}{return}
+::usrbinsh::#!/usr/bin/sh{return}{return}
+::usrbintsch::#!/usr/bin/tcsh{return}{return}
+::usrbinzsh::#!/usr/bin/zsh{return}{return}
 ::sloop::while(true){return}do{return}{return}done
-::sexit::exit 0 ; Hehe, 'sexit'.
+::sexit::{return}{return}exit 0 ; Hehe, 'sexit'.
