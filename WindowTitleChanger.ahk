@@ -8,5 +8,7 @@ IfMsgBox, Yes
   if ErrorLevel
     Exit
   else
-    WinSetTitle, A,, %newtitle%
+    ; Set the title of any 'discord.exe' process.
+    if WinExist("ahk_exe discord.exe")
+      WinSetTitle, %newtitle%
 Return
